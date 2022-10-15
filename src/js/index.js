@@ -11,30 +11,32 @@
 const abas = document.querySelectorAll(".aba");
 
 abas.forEach(aba => {
-    aba.addEventListener("click", function(){ //passo 2
+    //passo 2
+    aba.addEventListener("click", function(){ 
         
         if(aba.classList.contains("selecionado")){//n rodar o codigo se a aba ja estiver selecionada
             return;
         }
 
         selecionarAba(aba);
-
         monstrarInfoDaAba(aba);
-
     });
 });
 
 function selecionarAba(aba){
+    //passo 3
     const abaSelecionada = document.querySelector(".aba.selecionado");
-    abaSelecionada.classList.remove("selecionado");//passo 3
-    aba.classList.add("selecionado");//passo 4
+    abaSelecionada.classList.remove("selecionado");
+    
+    //passo 4
+    aba.classList.add("selecionado");
 }
 
 function monstrarInfoDaAba(aba){
     const informacaoSelecionada = document.querySelector(".informacao.selecionado"); //passo 5
     informacaoSelecionada.classList.remove("selecionado");
         
-    const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`
+    const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`;
 
     const infoSerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba);
     infoSerMostrada.classList.add("selecionado");
