@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/rolagem.css">
+
+    <title>Projeto Mini Portfólio</title>
+</head>
+<body>
+    <main class="cartao"><!--area do cartao inteiro-->
+
+        <div class="minhas-informacoes"><!--divisão foto e titulos-->
+            <img src="./src/images/foto-perfil-filipe.jpg" alt="foto de perfil">
+            <h1 class="nome">Filipe Basílio</h1>
+            <h2 class="cargo">Salesforce Developer Jr.</h2>
+        </div>
+
+        <div class="conteudo"><!--divisão abas e conteudos-->
+            <ul class="abas"><!--Lista que contem as tabs-->
+                <li class="aba selecionado" id="sobre-mim">
+                    <img src="./src/images/sobre.gif" alt="icone sobre mim">
+                </li>
+
+                <li class="aba" id="minhas-redes">
+                    <img src="./src/images/coracao.gif" alt="gif redes sociais">
+                </li>
+            </ul>
+            
+            <div class="informacoes-abas"><!--Conteudo das tabs-->
+
+                <div class="informacao selecionado" id="informacoes-sobre-mim">
+                    <h3 class="sub-titulo">Sobre</h3>
+                    <div class="descricao">
+                        <p>Olá! Muito bom dia, boa noite! Eu sou o Filipe Basilio, seja bem vindo(a)!!</p>
+                        
+                        <p>Sou aluno da Puc Minas, cursando Sistemas de informação, atualmente no 7º período. 
+                            <span> Rank expeditioner no trailhead.</span> Atuo como Salesforce Developer 
+                            desde julho de 2022. Estou querendo ingressar a fundo 
+                            no cenário salesforce, ser motivo de referência no que faço, a procura de desafios, 
+                            no intuito de evoluir junto àqueles que compartilham do mesmo sentimento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="informacao" id="informacoes-minhas-rede">
+                    <h3 class="sub-titulo">Minhas Redes</h3>
+
+                    <ul class="redes-sociais">
+                        <li>
+                            <a href="https://drive.google.com/file/d/18sZFM2JADiMkhu-urKzWgt43MTpbeowd/view?usp=sharing" 
+                            target="_blank" class="curriculo">Currículo</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/filipe-mariano-088861b4/"
+                            target="_blank" class="linkedin">LinkedIn</a>
+                        </li>
+
+                        <li>
+                            <a href="https://trailblazer.me/id/fmariano10" 
+                            target="_blank" class="trailblazer">Traiblazer</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
