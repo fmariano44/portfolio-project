@@ -1,0 +1,19 @@
+{
+  "background_color": "#ae0ed8",
+  "description": "Navegaçao do portfolio",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Portfolio",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Portfolio",
+  "start_url": "/",
+  "theme_color": "#8422b8",
+  "categories": [
+    "social"
+  ],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": [],
+  "lang": "pt"
+}
